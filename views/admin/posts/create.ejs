@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Posts</title>
+  <%- include('../../import'); -%>
+</head>
+
+<body>
+  <%- include('../../navs'); -%>
+  <h1>Novo Post</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form action="create" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="postTitle">E-mail</label>
+            <input name="title" type="text" class="form-control" id="postTitle" aria-describedby="emailHelp"
+              placeholder="Título do Post">
+            <small id="emailHelp" class="form-text text-muted">Manteremos os seus dados em segredo 😀.</small>
+          </div>
+          <div class="form-group" enctype="multipart/form-data">
+            <label for="postImage">Imagem</label>
+            <input name="images" type="file" class="form-control" id="postImage" placeholder="Imagem">
+          </div>
+          <div class="form-group">
+            <div class="form-group">
+              <label for="postDescription">Descrição</label>
+              <textarea name="description" type="text" class="form-control" id="postDescription"
+                placeholder="Descrição"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="postBody">Corpo</label>
+            <textarea name="postBody" type="text" class="form-control" id="postBody"
+              placeholder="Escreva sobre..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">OK</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <%- include('../../footer'); -%>
+</body>
+
+</html>

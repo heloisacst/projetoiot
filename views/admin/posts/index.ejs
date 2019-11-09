@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Posts</title>
+  <%- include('../../import'); -%>
+  <script type="text/javascript">
+    function ligar(){
+        var change = document.getElementById("change");
+          if( change.src=="../../images/on.png")
+              change.src="../../images/off.png";
+          else
+              change.src="../../images/on.png";
+    };
+  </script>
+</head>
+
+<body>
+  <%- include('../../navs'); -%>
+  <div class="center">
+    <h3>Alteração de Status</h3>
+  </div>
+      <p>Luz da Sala</p>
+      
+      <div class="container">
+      <div class="row">
+        <img id="change" onclick="ligar();" src="../../images/off.png"/>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

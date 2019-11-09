@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Post 1",
+        "image": "count_0.jpg",
+        "body": "Este é meu primeiro post",
+        "description": "Este é meu primeiro post :)"
+    },
+    {
+        "id": 2,
+        "name": "Post 2",
+        "image": "eat.jpg",
+        "body": "Este é meu segundo post",
+        "description": "Este é meu segundo post :)"
+    },
+    {
+        "id": 3,
+        "name": "Post 3",
+        "image": "hello.jpg",
+        "body": "Este é meu terceiro post",
+        "description": "Este é meu terceiro post :)"
+    }
+]

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('import'); -%>
+</head>
+
+<body>
+  <%- include('navs'); -%>
+  <div class="container">
+    <div class="row">
+      <div class="post-detail">
+        <center><img src="/images/<%= post.image %>" />
+          <h1><%= post.name %></h1>
+          <h1><%= post.body %></h1>
+          <p><%= post.description %></p>
+        </center>
+      </div>
+    </div>
+  </div>
+  <%- include('footer'); -%>
+</body>
+
+</html>

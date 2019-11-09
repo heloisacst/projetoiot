@@ -1,0 +1,83 @@
+div.container-fluid{
+    background-color: brown;
+    font-size: 35px;
+    font-style: arial;
+}
+
+ul.nav-pills{
+    font-size: 18px;
+    font-style: arial;
+    color: black;
+}
+
+.post-detail img{
+    width: 500px;
+    height: 500px;
+}
+
+.project-detail img{
+    width: 500px;
+    height: 500px;
+}
+
+.container-fluid img{
+    width: 65px;
+    height: 65px;
+}
+
+.btn-btn-primary a{
+    color: yellow;
+}
+
+footer{
+    color: black;
+    background-color: brown;
+    margin-top: 100px;
+}
+
+.btn-btn-primary{
+    color: black;
+}
+
+body{
+    background-color: black;
+}
+
+.container-fluid h1{
+    text-align: center;
+    font-style: arial;
+    margin-top: 75px;
+    padding-top: 5px;
+}
+
+.container-fluid h5{
+    text-align: center;
+    font-style: arial;
+}
+
+.container-fluid a{
+    text-align: center;
+    font-style: arial;
+}
+
+.just-here{
+    margin-top: 5px;
+}
+
+.nav-item a{
+    color: black;
+}
+
+.table{
+    color: white;
+}
+
+.center{
+    color: gray;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
