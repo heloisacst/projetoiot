@@ -4,31 +4,37 @@
   <meta charset="UTF-8">
   <title>Posts</title>
   <%- include('../../import'); -%>
-  <script type="text/javascript">
-    function ligar(){
-        var change = document.getElementById("change");
-          if( change.src=="../../images/on.png")
-              change.src="../../images/off.png";
-          else
-              change.src="../../images/on.png";
-    };
-  </script>
 </head>
 
 <body>
   <%- include('../../navs'); -%>
   <div class="center">
-    <h3>Alteração de Status</h3>
+    <h1>Administração de Sensores</h1>
   </div>
-      <p>Luz da Sala</p>
-      
-      <div class="container">
-      <div class="row">
-        <img id="change" onclick="ligar();" src="../../images/off.png"/>
-      </div>
-      </div>
+  <div class="container">
+    <div class="row">
     </div>
-  </div>
+    <div class="row mb-2">
+      <a style="padding: 5px;" type="button" href="/admin/posts/create" class="button btn-success">Novo Sensor</a>
+    </div>
+    <div class="row">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Sensor</th>
+            <th scope="col">Código</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% posts.forEach((posts) => { %>
+          <tr>
+            <td><%= posts.id %></td>
+            <td><%= posts.name %></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
 </body>
 
 </html>

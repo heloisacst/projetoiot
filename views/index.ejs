@@ -1,18 +1,21 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-  <head>
-    <%- include('import'); -%>
-  </head>
-  <body>
-     <%- include('navs'); -%>
+
+<head>
+  <%- include('import'); -%>
+</head>
+
+<body>
+  <%- include('navs'); -%>
   <div class="just-here">
-      <div class="container">
-          <div class="row">
-              <% posts.forEach((post) => { %>
-              <%- include('post_card', { post: post }); -%>
-              <% }); %>
-          </div>
-    <%- include('footer'); -%>
+    <div class="container">
+      <div class="row">
+        <% posts.forEach((post) => { %>
+        <%- include('post_card', { post: post }); -%>
+        <% }); %>
+      </div>
+    </div>
   </div>
-  </body>
+</body>
+
 </html>

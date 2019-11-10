@@ -8,39 +8,32 @@
 
 <body>
   <%- include('../../navs'); -%>
-  <h1>Novo Post</h1>
+  <h1>Novo Sensor</h1>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <form action="create" method="POST" enctype="multipart/form-data">
           <div class="form-group">
-            <label for="postTitle">E-mail</label>
+            <label for="postTitle">Local do Sensor</label>
             <input name="title" type="text" class="form-control" id="postTitle" aria-describedby="emailHelp"
-              placeholder="Título do Post">
-            <small id="emailHelp" class="form-text text-muted">Manteremos os seus dados em segredo 😀.</small>
-          </div>
-          <div class="form-group" enctype="multipart/form-data">
-            <label for="postImage">Imagem</label>
-            <input name="images" type="file" class="form-control" id="postImage" placeholder="Imagem">
+              placeholder="Ex: Sensor Churrasqueira">
+            <small id="emailHelp" class="form-text text-muted"></small>
           </div>
           <div class="form-group">
             <div class="form-group">
-              <label for="postDescription">Descrição</label>
-              <textarea name="description" type="text" class="form-control" id="postDescription"
-                placeholder="Descrição"></textarea>
+              <label for="postDescription">Temperatura</label>
+              <input name="description" type="text" class="form-control" id="postDescription" placeholder="Em Celcius">
             </div>
           </div>
           <div class="form-group">
-            <label for="postBody">Corpo</label>
-            <textarea name="postBody" type="text" class="form-control" id="postBody"
-              placeholder="Escreva sobre..."></textarea>
+            <label for="postBody">Umidade</label>
+            <input name="postBody" type="text" class="form-control" id="postBody" placeholder="Em %.">
           </div>
-          <button type="submit" class="btn btn-primary">OK</button>
+          <button type="submit" class="btn btn-primary">Salvar</button>
         </form>
       </div>
     </div>
   </div>
-  <%- include('../../footer'); -%>
 </body>
 
 </html>
