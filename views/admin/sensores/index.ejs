@@ -15,7 +15,7 @@
     <div class="row">
     </div>
     <div class="row mb-2">
-      <a style="padding: 5px;" type="button" href="/admin/posts/create" class="button btn-success">Novo Sensor</a>
+      <a style="padding: 5px;" type="button" href="/admin/sensores/create" class="button btn-success">Novo Sensor</a>
     </div>
     <div class="row">
       <table class="table">
@@ -26,10 +26,10 @@
           </tr>
         </thead>
         <tbody>
-          <% posts.forEach((posts) => { %>
+          <% sensores.forEach((sensores) => { %>
           <tr>
-            <td><%= posts.id %></td>
-            <td><%= posts.name %></td>
+            <td><%= sensores.id %></td>
+            <td><%= sensores.name %></td>
           </tr>
           <% }); %>
         </tbody>

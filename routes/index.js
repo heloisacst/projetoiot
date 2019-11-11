@@ -1,34 +1,44 @@
 var express = require('express');
 var router = express.Router();
-var postsService = require('../services/postsService');
+var sensoresService = require('../services/sensoresService');
+var acionamentosService = require('../services/acionamentosService');
 
 /* GET home page. */
-router.get('/', function(req, res, next) { /*res é resposta: conteudo, codigo, etc*/
-  var posts = postsService.getPosts();
+router.get('/', function(req, res, next) {
+  var sensores = sensoresService.getSensores();
+  var acionamentos = acionamentosService.getAcionamentos();
 
-  res.render('index', {posts: posts}); /*esta linha responde a função. render=renderizar o template -- o primeiro post é a var do template*/
+  res.render('index', { title: 'Blog', sensores: sensores, acionamentos: acionamentos });
 });
 
-router.get('/posts', function(req, res, next){
+router.get('/sensores/:sensorId', function(req, res, next) {
+  var sensorId = req.params.sensorId;
 
-  var posts = postsService.getPosts();
+  var sensores = sensoresService.getSensores();
 
-  res.render('all_posts', {posts: posts});
+  var sensor = sensores.filter((sensor) => sensor.id == sensorId)[0];
+
+  res.render('sensor', { title: sensor.nome, sensor: sensor });
+
 });
 
-router.get('/posts/:postsId', function(req, res, next){
 
-  var postId = req.params.postId;
-  var posts = postsService.getPosts();
-  var post = posts.filter((post) => post.Id == postId)[0];
+router.get('/acionamentos', function(req, res, next)
+{
+  var acionamentos = acionamentosService.getAcionamentos();
 
-  /*for(var i = 0; i < posts.length; i++){
-    if(posts[i].id == postId){
-      var post = posts[i];
-    }
-  } */
+  res.render('acionamentos', { title: 'Acionamentos', acionamentos: acionamentos });
+});
 
-  res.render('post', {post: post});
+router.get('/acionamento/:acionamentoId', function(req, res, next)
+{
+  var acionamentoId = req.params.acionamentoId;
+
+  var acionamentos = sensoresService.getSensores();
+
+  var acionamento = acionamentos.filter((acionamento) => acionamento.id == acionamentoId)[0];
+
+  res.render('acionamento', { title: acionamento.nome, acionamento: acionamento });
 });
 
 module.exports = router;

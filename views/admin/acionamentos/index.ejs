@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Acionamentos</title>
+  <%- include('../../import'); -%>
+</head>
+
+<body>
+  <%- include('../../navs'); -%>
+  <div class="center">
+    <h1>Lista de Dispositivos de Acionamento</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+    </div>
+    <div class="row mb-2">
+      <a style="padding: 5px;" type="button" href="/admin/acionamentos/create" class="button btn-success">Novo Dispositivo</a>
+    </div>
+    <div class="row">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Sensor</th>
+            <th scope="col">Código</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% acionamentos.forEach((acionamentos) => { %>
+          <tr>
+            <td><%= acionamentos.id %></td>
+            <td><%= acionamentos.name %></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
+</body>
+
+</html>

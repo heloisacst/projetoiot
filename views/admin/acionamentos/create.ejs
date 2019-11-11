@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Acionamentos</title>
+  <%- include('../../import'); -%>
+</head>
+
+<body>
+  <%- include('../../navs'); -%>
+  <h1>Novo Dispositivo</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form action="create" method="ACIONAMENTO" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="acionamentoCode">Código</label>
+            <input name="code" type="text" class="form-control" id="acionamentoCode" aria-describedby="emailHelp"
+              placeholder="Código do dispositivo">
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <div class="form-group">
+              <label for="acionamentoName">Nome</label>
+              <input name="name" type="text" class="form-control" id="acionamentoName" placeholder="Ex: Luz da sala">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="acionamentoStatus">Status</label>
+            <input name="Status" type="text" class="form-control" id="acionamentoStatus" placeholder="(Ligada ou desligada)">
+          </div>
+          <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
