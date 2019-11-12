@@ -10,6 +10,7 @@ var usersRouter = require('./routes/users');
 var adminSensoresRouter = require('./routes/admin/sensores');
 var adminAcionamentosRouter = require('./routes/admin/acionamentos');
 var authRouter = require('./routes/auth');
+var verifyAuth = require('./middlewares/authMiddle');
 
 var app = express();
 

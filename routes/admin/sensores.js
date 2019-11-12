@@ -7,7 +7,7 @@ router.get('/', function (req, res, next){
 
     var data = {
         sensores: sensores
-    }
+    };
     res.render('admin/sensores/index', data);
 });
 
@@ -25,6 +25,7 @@ router.post('/create', function (req, res, next){
 
     newSensor.id = newId;
     newSensor.nome = req.body.nome;
+    newSensor.image = req.file.filename;
     newSensor.data = req.body.data;
     newSensor.valor = req.body.valor;
     newSensor.tipo = req.body.tipo;

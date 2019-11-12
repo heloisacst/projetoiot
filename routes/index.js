@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   var sensores = sensoresService.getSensores();
   var acionamentos = acionamentosService.getAcionamentos();
 
-  res.render('index', { title: 'Blog', sensores: sensores, acionamentos: acionamentos });
+  res.render('index', {sensores: sensores, acionamentos: acionamentos });
 });
 
 router.get('/sensores/:sensorId', function(req, res, next) {
@@ -18,10 +18,9 @@ router.get('/sensores/:sensorId', function(req, res, next) {
 
   var sensor = sensores.filter((sensor) => sensor.id == sensorId)[0];
 
-  res.render('sensor', { title: sensor.nome, sensor: sensor });
+  res.render('sensor', { title: 'Sensores', sensor: sensor });
 
 });
-
 
 router.get('/acionamentos', function(req, res, next)
 {
@@ -38,7 +37,7 @@ router.get('/acionamento/:acionamentoId', function(req, res, next)
 
   var acionamento = acionamentos.filter((acionamento) => acionamento.id == acionamentoId)[0];
 
-  res.render('acionamento', { title: acionamento.nome, acionamento: acionamento });
+  res.render('acionamento', { title: 'Acionamento', acionamento: acionamento });
 });
 
 module.exports = router;

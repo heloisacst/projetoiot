@@ -7,7 +7,7 @@ router.get('/', function (req, res, next){
 
     var data = {
         acionamentos: acionamentos
-    }
+    };
     res.render('admin/acionamentos/index', data);
 });
 
@@ -24,6 +24,7 @@ router.post('/create', function (req, res, next){
     var newAcionamento = {};
     newAcionamento.id = newId;
     newAcionamento.name = req.body.nome;
+    newSensor.image = req.file.filename;
     newAcionamento.status = req.body.status;
 
     acionamentosService.saveAcionamento(newAcionamento);

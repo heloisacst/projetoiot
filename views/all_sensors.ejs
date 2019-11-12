@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('import'); -%>
+</head>
+
+<body>
+  <%- include('navs'); -%>
+  <div class="just-here">
+    <div class="container">
+      <div class="row">
+        <% sensores.forEach((sensor) => { %>
+        <%- include('sensor_card', { sensor: sensor }); -%>
+        <% }); %>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
