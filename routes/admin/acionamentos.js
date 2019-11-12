@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var acionamentosService = require('../../services/acionamentosService');
+var uploader = require('../../middlewares/uploaderMiddle');
 
 router.get('/', function (req, res, next){
     var acionamentos = acionamentosService.getAcionamentos();
@@ -16,7 +17,7 @@ router.get('/create', function (req, res, next){
     res.render('admin/acionamentos/create');
 });
 
-router.post('/create', function (req, res, next){
+router.post('/create', uploader.single('image'), function (req, res, next){
     var acionamentos = acionamentosService.getAcionamentos();
 
     var newId = acionamentos.lenght + 1;

@@ -1,1 +1,16 @@
-[{"id":1,"codigo":"123","nome":"Sensor da Churrasqueira","data":"10/11/2019","valor":"35° graus","tipo":"Temperatura"},{"id":2,"codigo":"456","nome":"Sensor da Sala","data":"10/11/2019","valor":"60%","tipo":"Umidade"},{"id":null}]
+[
+    {
+        "id": 1,
+        "nome": "Sensor da Churrasqueira",
+        "data": "10/11/2019",
+        "valor": "35° graus",
+        "tipo": "Temperatura"
+    },
+    {
+        "id": 2,
+        "nome": "Sensor da Sala",
+        "data": "10/11/2019",
+        "valor": "60%",
+        "tipo": "Umidade"
+    }
+]

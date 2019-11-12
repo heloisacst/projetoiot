@@ -27,7 +27,7 @@ router.post('/login', function(req, res, next) {
   } 
   
 
-  res.render('login', { msg: 'E-mail e senha incorretos' });
+  res.render('login', { msg: 'E-mail e/ou senha incorretos' });
 });
 
 

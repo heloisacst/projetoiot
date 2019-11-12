@@ -1,1 +1,7 @@
-[{"id":1,"name":"Luz da Sala","status":"Ligar"},{"id":null}]
+[
+    {
+        "id": 1,
+        "name": "Luz da Sala",
+        "status": "Ligar"
+    }
+]

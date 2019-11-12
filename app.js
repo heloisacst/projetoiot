@@ -35,8 +35,8 @@ app.use('/public', express.static(path.resolve('./public'))); //complemento para
 
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
-app.use('/admin/sensores', adminSensoresRouter);
-app.use('/admin/acionamentos', adminAcionamentosRouter);
+app.use('/admin/sensores', /*[verifyAuth], */adminSensoresRouter);
+app.use('/admin/acionamentos', /*[verifyAuth], */adminAcionamentosRouter);
 app.use('/users', usersRouter);
 
 

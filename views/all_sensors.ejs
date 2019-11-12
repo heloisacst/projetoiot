@@ -10,7 +10,7 @@
   <div class="just-here">
     <div class="container">
       <div class="row">
-        <% sensores.forEach((sensor) => { %>
+        <% sensor.forEach((sensor) => { %>
         <%- include('sensor_card', { sensor: sensor }); -%>
         <% }); %>
       </div>
