@@ -23,8 +23,7 @@ router.post('/create', function (req, res, next){
 
     var newAcionamento = {};
     newAcionamento.id = newId;
-    newAcionamento.código = req.body.código;
-    newAcionamento.nome = req.body.nome;
+    newAcionamento.name = req.body.nome;
     newAcionamento.status = req.body.status;
 
     acionamentosService.saveAcionamento(newAcionamento);

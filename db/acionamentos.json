@@ -1,15 +1,1 @@
-[
-    {
-        "id": 1,
-        "código": "123",
-        "nome": "Luz da Sala",
-        "status": "Ligar"
-    },
-
-    {
-        "id": 2,
-        "código": "456",
-        "nome": "Luz da Garagem",
-        "status": "Desligar"
-    }
-]
+[{"id":1,"name":"Luz da Sala","status":"Ligar"},{"id":null}]

@@ -14,20 +14,27 @@
       <div class="col-md-12">
         <form action="create" method="POST" enctype="multipart/form-data">
           <div class="form-group">
-            <label for="postTitle">Local do Sensor</label>
-            <input name="title" type="text" class="form-control" id="postTitle" aria-describedby="emailHelp"
+            <label for="sensorTitle">Local do Sensor</label>
+            <input name="nome" type="text" class="form-control" id="sensorTitle" aria-describedby="emailHelp"
               placeholder="Ex: Sensor Churrasqueira">
             <small id="emailHelp" class="form-text text-muted"></small>
           </div>
+          <h3>Medições</h3>
           <div class="form-group">
             <div class="form-group">
-              <label for="postDescription">Temperatura</label>
-              <input name="description" type="text" class="form-control" id="postDescription" placeholder="Em Celcius">
+              <label for="sensorDescription">Data</label>
+              <input name="data" type="text" class="form-control" id="sensorDescription" placeholder="DD/MM/YYYY">
             </div>
           </div>
           <div class="form-group">
-            <label for="postBody">Umidade</label>
-            <input name="postBody" type="text" class="form-control" id="postBody" placeholder="Em %.">
+            <div class="form-group">
+              <label for="sensorDescription">Valor</label>
+              <input name="valor" type="text" class="form-control" id="sensorDescription" placeholder="Em Celcius">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="sensorBody">Tipo</label>
+            <input name="tipo" type="text" class="form-control" id="sensorBody" placeholder="Temperatura ou Umidade">
           </div>
           <button type="submit" class="btn btn-primary">Salvar</button>
         </form>

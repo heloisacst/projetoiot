@@ -6,8 +6,10 @@ var logger = require('morgan');
 var session = require('express-session')
 
 var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
 var adminSensoresRouter = require('./routes/admin/sensores');
 var adminAcionamentosRouter = require('./routes/admin/acionamentos');
+var authRouter = require('./routes/auth');
 
 var app = express();
 
@@ -31,8 +33,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/public', express.static(path.resolve('./public'))); //complemento para arquivos estáticos
 
 app.use('/', indexRouter);
+app.use('/auth', authRouter);
 app.use('/admin/sensores', adminSensoresRouter);
 app.use('/admin/acionamentos', adminAcionamentosRouter);
+app.use('/users', usersRouter);
 
 
 // catch 404 and forward to error handler

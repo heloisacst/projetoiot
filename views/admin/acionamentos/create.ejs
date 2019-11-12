@@ -12,22 +12,15 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <form action="create" method="ACIONAMENTO" enctype="multipart/form-data">
+        <form action="create" method="POST" enctype="multipart/form-data">
           <div class="form-group">
-            <label for="acionamentoCode">Código</label>
-            <input name="code" type="text" class="form-control" id="acionamentoCode" aria-describedby="emailHelp"
-              placeholder="Código do dispositivo">
-            <small id="emailHelp" class="form-text text-muted"></small>
-          </div>
-          <div class="form-group">
-            <div class="form-group">
-              <label for="acionamentoName">Nome</label>
-              <input name="name" type="text" class="form-control" id="acionamentoName" placeholder="Ex: Luz da sala">
-            </div>
+            <label for="acionamentoCode">Nome do Dispositivo</label>
+            <input name="name" type="text" class="form-control" id="acionamentoName" aria-describedby="emailHelp"
+              placeholder="Informe o nome do dispositivo">
           </div>
           <div class="form-group">
             <label for="acionamentoStatus">Status</label>
-            <input name="Status" type="text" class="form-control" id="acionamentoStatus" placeholder="(Ligada ou desligada)">
+            <input name="status" type="text" class="form-control" id="acionamentoStatus" placeholder="(Ligada ou desligada)">
           </div>
           <button type="submit" class="btn btn-primary">Salvar</button>
         </form>

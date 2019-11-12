@@ -22,8 +22,8 @@ router.post('/create', function (req, res, next){
     var newId = sensores.lenght + 1;
 
     var newSensor = {};
+
     newSensor.id = newId;
-    newSensor.código = req.body.código;
     newSensor.nome = req.body.nome;
     newSensor.data = req.body.data;
     newSensor.valor = req.body.valor;

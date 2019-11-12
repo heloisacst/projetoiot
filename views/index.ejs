@@ -16,6 +16,15 @@
       </div>
     </div>
   </div>
+  <div class="just-here">
+    <div class="container">
+      <div class="row">
+        <% acionamentos.forEach((acionamento) => { %>
+        <%- include('acionamento_card', { acionamento: acionamento }); -%>
+        <% }); %>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
