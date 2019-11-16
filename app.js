@@ -11,6 +11,8 @@ var adminSensoresRouter = require('./routes/admin/sensores');
 var adminAcionamentosRouter = require('./routes/admin/acionamentos');
 var authRouter = require('./routes/auth');
 var verifyAuth = require('./middlewares/authMiddle');
+var sensorsRouter = require('./routes/sensors');
+var actuatorsRouter = require('./routes/actuators');
 
 var app = express();
 
@@ -35,10 +37,11 @@ app.use('/public', express.static(path.resolve('./public'))); //complemento para
 
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
-app.use('/admin/sensores', /*[verifyAuth], */adminSensoresRouter);
-app.use('/admin/acionamentos', /*[verifyAuth], */adminAcionamentosRouter);
+app.use('/admin/sensores', [verifyAuth], adminSensoresRouter);
+app.use('/admin/acionamentos', [verifyAuth], adminAcionamentosRouter);
 app.use('/users', usersRouter);
-
+app.use('/sensors', sensorsRouter);
+app.use('/actuators', actuatorsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

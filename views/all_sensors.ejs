@@ -1,21 +1,41 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <title>Posts</title>
   <%- include('import'); -%>
 </head>
 
 <body>
   <%- include('navs'); -%>
-  <div class="just-here">
-    <div class="container">
-      <div class="row">
-        <% sensor.forEach((sensor) => { %>
-        <%- include('sensor_card', { sensor: sensor }); -%>
-        <% }); %>
-      </div>
-    </div>
+  <div class="center">
+    <h1>Administração de Sensores</h1>
   </div>
+  <div class="container">
+    <div class="row">
+    </div>
+    <div class="row mb-2">  
+    </div>
+    <div class="row">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Data</th>
+            <th scope="col">Temperatura</th>
+            <th scope="col">Umidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% sensor.forEach((sensor) => { %>
+          <tr>
+            <td><%= sensor.date %></td>
+            <td><%= sensor.temperature %></td>
+            <td><%= sensor.humidity %></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
 </body>
 
 </html>

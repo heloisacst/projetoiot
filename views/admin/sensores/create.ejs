@@ -12,34 +12,32 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <form action="create" method="POST" enctype="multipart/form-data">
+        <form action="create" method="POST">
           <div class="form-group">
             <label for="sensorTitle">Local do Sensor</label>
-            <input name="nome" type="text" class="form-control" id="sensorTitle" aria-describedby="emailHelp"
+            <input name="name" type="text" class="form-control" id="sensorTitle" aria-describedby="emailHelp"
               placeholder="Ex: Sensor Churrasqueira">
             <small id="emailHelp" class="form-text text-muted"></small>
           </div>
-          <h3>Medições</h3>
           <div class="form-group">
             <div class="form-group">
               <label for="sensorDescription">Data</label>
-              <input name="data" type="text" class="form-control" id="sensorDescription" placeholder="DD/MM/YYYY">
+              <input name="date" type="datetime" class="form-control" id="sensorDescription" placeholder="DD/MM/YYYY">
             </div>
+          </div>
+          <div class="center-2">
+          <h3 style="color: aliceblue;">Medições</h3>
           </div>
           <div class="form-group">
             <div class="form-group">
-              <label for="sensorDescription">Valor</label>
-              <input name="valor" type="text" class="form-control" id="sensorDescription" placeholder="Em Celcius">
+              <label for="sensorDescription">Temperatura</label>
+              <input name="temperature" type="text" class="form-control" id="sensorDescription" placeholder="Em Celcius">
             </div>
           </div>
           <div class="form-group">
-            <label for="sensorBody">Tipo</label>
-            <input name="tipo" type="text" class="form-control" id="sensorBody" placeholder="Temperatura ou Umidade">
+            <label for="sensorBody">Umidade</label>
+            <input name="humidity" type="text" class="form-control" id="sensorBody" placeholder="Umidade">
           </div>
-          <div class="form-group">
-              <label for="sensorImage">Imagem</label>
-              <input type="file" name="image" class="form-control" />
-            </div>
           <button type="submit" class="btn btn-primary">Salvar</button>
         </form>
       </div>

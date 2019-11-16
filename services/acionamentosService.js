@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-var acionamentosFilePath = 'db/acionamentos.json';
+var acionamentosFilePath = 'db/actuators.json';
 
 var loadFileAcionamentos = function() {
   var fileData = fs.readFileSync(acionamentosFilePath, 'utf8');
