@@ -2,7 +2,10 @@
 <div class="card" style="width: 18rem; margin: 45px;">
     <div class="card-body">
       <h4 class="card-title"><%= acionamento.name %></h4>
-        <a type="button" class="btn btn-success"><%= acionamento.status %></a>
+      <form action="create" method="POST">
+      <button value="<%= acionamento.status %>" name="status" type="button; submit" class="btn btn-success">Ligar</button>
+      <input type="hidden" name="id" value="<%= acionamento.id %>">
+      </form>
     </div>
   </div>
 </div>

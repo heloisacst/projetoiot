@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session')
+var ejs = require('ejs');
+var fs  = require('fs');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -23,6 +25,18 @@ app.use(session({
   saveUninitialized: true,
   cookie: { secure: false }
 }));
+
+/*app.locals({
+  buttonStatus: function ligar(){
+    var buttonStatus = document.getElementById("change");
+      if(buttonStatus == 0)
+      <button type="button" class="btn btn-success">Ligar</button>
+      else
+      <button type="button" class="btn btn-danger">Desligar</button>
+    /*var template = fs.readFileSync('acionamento_card.ejs', 'utf-8');
+    return ejs.render(template, status);
+  }
+});*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

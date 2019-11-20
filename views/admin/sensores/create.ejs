@@ -15,33 +15,15 @@
         <form action="create" method="POST">
           <div class="form-group">
             <label for="sensorTitle">Local do Sensor</label>
-            <input name="name" type="text" class="form-control" id="sensorTitle" aria-describedby="emailHelp"
-              placeholder="Ex: Sensor Churrasqueira">
-            <small id="emailHelp" class="form-text text-muted"></small>
+            <input name="name" type="text" class="form-control" id="sensorTitle" placeholder="Ex: Sensor Churrasqueira">
           </div>
-          <div class="form-group">
-            <div class="form-group">
-              <label for="sensorDescription">Data</label>
-              <input name="date" type="datetime" class="form-control" id="sensorDescription" placeholder="DD/MM/YYYY">
-            </div>
-          </div>
-          <div class="center-2">
-          <h3 style="color: aliceblue;">Medições</h3>
-          </div>
-          <div class="form-group">
-            <div class="form-group">
-              <label for="sensorDescription">Temperatura</label>
-              <input name="temperature" type="text" class="form-control" id="sensorDescription" placeholder="Em Celcius">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="sensorBody">Umidade</label>
-            <input name="humidity" type="text" class="form-control" id="sensorBody" placeholder="Umidade">
-          </div>
-          <button type="submit" class="btn btn-primary">Salvar</button>
-        </form>
-      </div>
+          <input name="date" type="hidden" value="01/01/2019">
+          <input name="temperature" type="hidden" value="1">
+          <input name="humidity" type="hidden" value="1">
+      <button type="submit" class="btn btn-primary">Salvar</button>
+      </form>
     </div>
+  </div>
   </div>
 </body>
 

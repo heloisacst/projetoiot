@@ -48,4 +48,15 @@ router.get('/acionamento/:acionamentoId', function(req, res, next)
   res.render('acionamento', { title: 'Acionamento', acionamento: acionamento });
 });
 
+router.post('/create', function (req, res, next){
+  var acionamento = acionamentosService.getAcionamentos();
+  
+  var newAcionamento = {};
+  newAcionamento.id = req.body.id;
+  newAcionamento.status = req.body.status == 1 ? 0 : 1;
+  acionamentosService.updateAcionamento(newAcionamento);
+
+  res.redirect('/');
+});
+
 module.exports = router;

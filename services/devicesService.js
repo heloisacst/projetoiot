@@ -51,10 +51,12 @@ var addMeasurement = function(sensorId, temperature, humidity) {
   selectedSensor.measurements.push(measurementData);
 
   saveFileTemperatureSensors(sensors);
+  saveFileActuators(actuators);
 }
 
 module.exports = {
   getSensors: getSensors,
   getActuators: getActuators,
-  addMeasurement: addMeasurement
+  addMeasurement: addMeasurement,
+  saveFileActuators: saveFileActuators
 }

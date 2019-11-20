@@ -25,7 +25,14 @@ var saveAcionamento = function(newAcionamento) {
   saveFileAcionamentos(acionamentos);
 }
 
+var updateAcionamento = function(acionamentoParaAtualizar) {
+  var todosAcionamentos = loadFileAcionamentos();
+  todosAcionamentos.find(objeto => objeto.id == acionamentoParaAtualizar.id).status = acionamentoParaAtualizar.status
+  saveFileAcionamentos(todosAcionamentos);
+}
+
 module.exports = {
   getAcionamentos: getAcionamentos,
-  saveAcionamento: saveAcionamento
+  saveAcionamento: saveAcionamento,
+  updateAcionamento: updateAcionamento
 }
