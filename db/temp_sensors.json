@@ -1,1 +1,35 @@
-[{"id":1,"name":"Temperatura e Umidade da Sala","measurements":[{"date":"11/12/2019, 11:57:55 AM","temperature":"26.10","humidity":"78.70"},{"date":"2019-11-19 10:40:35 PM","temperature":"25.50","humidity":"63.20"},{"date":"2019-11-19 10:40:46 PM","temperature":"25.40","humidity":"63.10"},{"date":"2019-11-19 10:40:56 PM","temperature":"25.40","humidity":"63.20"},{"date":"2019-11-19 10:41:06 PM","temperature":"25.40","humidity":"63.20"},{"date":"2019-11-19 10:41:17 PM","temperature":"25.40","humidity":"63.30"},{"date":"2019-11-19 10:41:27 PM","temperature":"25.40","humidity":"63.30"},{"date":"2019-11-19 10:41:37 PM","temperature":"25.40","humidity":"63.20"},{"date":"2019-11-19 10:41:48 PM","temperature":"25.40","humidity":"63.10"},{"date":"2019-11-19 10:41:58 PM","temperature":"25.40","humidity":"63.10"},{"date":"2019-11-19 10:42:08 PM","temperature":"25.40","humidity":"63.00"},{"date":"2019-11-19 10:42:19 PM","temperature":"25.40","humidity":"63.10"},{"date":"2019-11-19 10:43:28 PM","temperature":"25.40","humidity":"62.60"},{"date":"2019-11-19 10:43:38 PM","temperature":"25.40","humidity":"62.40"},{"date":"2019-11-19 10:43:48 PM","temperature":"25.40","humidity":"62.60"},{"date":"2019-11-19 10:43:59 PM","temperature":"25.40","humidity":"62.70"},{"date":"2019-11-19 10:44:09 PM","temperature":"25.40","humidity":"62.80"},{"date":"2019-11-19 10:44:19 PM","temperature":"25.40","humidity":"63.00"},{"date":"2019-11-19 10:44:30 PM","temperature":"25.40","humidity":"63.20"},{"date":"2019-11-19 10:44:40 PM","temperature":"25.40","humidity":"63.40"},{"date":"2019-11-19 10:44:50 PM","temperature":"25.40","humidity":"63.60"},{"date":"2019-11-19 10:45:01 PM","temperature":"25.40","humidity":"64.20"},{"date":"2019-11-19 10:45:11 PM","temperature":"25.40","humidity":"64.40"},{"date":"2019-11-19 10:45:21 PM","temperature":"25.40","humidity":"64.40"},{"date":"2019-11-19 10:45:32 PM","temperature":"25.40","humidity":"64.30"},{"date":"2019-11-19 10:45:42 PM","temperature":"25.40","humidity":"64.40"},{"date":"2019-11-19 10:45:52 PM","temperature":"25.40","humidity":"64.60"},{"date":"2019-11-19 10:46:03 PM","temperature":"25.40","humidity":"64.90"},{"date":"2019-11-19 10:46:13 PM","temperature":"25.40","humidity":"64.90"},{"date":"2019-11-19 10:46:23 PM","temperature":"25.40","humidity":"65.00"},{"date":"2019-11-19 10:46:34 PM","temperature":"25.50","humidity":"65.00"},{"date":"2019-11-19 10:46:44 PM","temperature":"25.50","humidity":"64.90"},{"date":"2019-11-19 10:46:54 PM","temperature":"25.50","humidity":"65.00"},{"date":"2019-11-19 10:47:05 PM","temperature":"25.50","humidity":"65.00"},{"date":"2019-11-19 10:47:15 PM","temperature":"25.50","humidity":"64.80"},{"date":"2019-11-19 10:47:25 PM","temperature":"25.50","humidity":"64.50"},{"date":"2019-11-19 10:47:36 PM","temperature":"25.50","humidity":"64.10"},{"date":"2019-11-19 10:47:46 PM","temperature":"25.50","humidity":"63.90"},{"date":"2019-11-19 10:47:56 PM","temperature":"25.50","humidity":"63.80"},{"date":"2019-11-19 10:48:06 PM","temperature":"25.50","humidity":"63.70"},{"date":"2019-11-19 10:48:17 PM","temperature":"25.40","humidity":"63.50"},{"date":"2019-11-19 10:48:27 PM","temperature":"25.40","humidity":"63.50"},{"date":"2019-11-19 10:48:56 PM","temperature":"25.40","humidity":"63.40"},{"date":"2019-11-19 10:49:06 PM","temperature":"25.30","humidity":"63.30"},{"date":"2019-11-19 10:49:16 PM","temperature":"25.30","humidity":"63.30"},{"date":"2019-11-19 10:49:27 PM","temperature":"25.30","humidity":"63.40"},{"date":"2019-11-19 10:49:37 PM","temperature":"25.30","humidity":"63.40"},{"date":"2019-11-19 10:49:47 PM","temperature":"25.40","humidity":"63.50"},{"date":"2019-11-19 10:49:57 PM","temperature":"25.40","humidity":"63.30"},{"date":"2019-11-19 10:50:08 PM","temperature":"25.40","humidity":"63.20"},{"date":"2019-11-19 10:50:18 PM","temperature":"25.40","humidity":"63.10"},{"date":"2019-11-19 10:50:28 PM","temperature":"25.40","humidity":"63.00"}]},{"id":2,"name":"Churrasqueira","date":"01/01/2019","temperature":"25º","humidity":"45%"}]
+[
+    {
+        "id": 1,
+        "name": "Temperatura e Umidade da Sala",
+        "measurements": [
+            {
+                "date": "11/12/2019, 11:57:55 AM",
+                "temperature": "26.10",
+                "humidity": "78.70"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "testre 2",
+        "measurements": [
+            {
+                "date": "01/01/2019",
+                "temperature": "1",
+                "humidity": "1"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "teste teste",
+        "measurements": [
+            {
+                "date": "01/01/2019",
+                "temperature": "1",
+                "humidity": "1"
+            }
+        ]
+    }
+]
