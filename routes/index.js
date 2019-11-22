@@ -17,7 +17,7 @@ router.get('/sensores/:sensorId', function(req, res, next) {
   var sensores = sensoresService.getSensores();
 
   var sensor = sensores.filter((sensor) => sensor.id == sensorId)[0];
-
+  
   res.render('sensor', { title: 'Sensores', sensor: sensor });
 
 });
@@ -26,7 +26,7 @@ router.get('/sensores', function(req, res, next) {
 
   var sensores = sensoresService.getSensores();
 
-  res.render('all_sensors', { title: 'Sensores', sensor: sensores });
+  res.render('all_sensors', { title: 'Sensores', sensor: sensores});
 
 });
 

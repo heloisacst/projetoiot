@@ -14,28 +14,41 @@
   <div class="container">
     <div class="row">
     </div>
-    <div class="row mb-2">  
+    <div class="row mb-2">
     </div>
     <div class="row">
-      <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">Data</th>
-            <th scope="col">Temperatura</th>
-            <th scope="col">Umidade</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% sensor.forEach((sensor) => { %>
-          <tr>
-            <td><%= sensor.date %></td>
-            <td><%= sensor.temperature %></td>
-            <td><%= sensor.humidity %></td>
-          </tr>
-          <% }); %>
-        </tbody>
-      </table>
+      <% sensor.forEach((sensor) => { %>
+      <div class="sensor">
+        <h2 class="sensor-name">
+          <%= sensor.id %> - <%= sensor.name %>
+        </h2>
+        <br>
+        <% if (sensor.measurements.length > 0) { %>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Temperatura</th>
+              <th>Umidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% sensor.measurements.forEach((measurement) => { %>
+            <tr>
+              <td><%= measurement.date %></td>
+              <td><%= measurement.temperature %></td>
+              <td><%= measurement.humidity %></td>
+            </tr>
+            <% }); %>
+          </tbody>
+        </table>
+        <% } else { %>
+        Nenhum valor existente para esse sensor
+        <% } %>
+      </div>
+      <% }); %>
     </div>
+  </div>
 </body>
 
 </html>
