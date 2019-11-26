@@ -25,7 +25,11 @@ router.post('/create', function (req, res, next){
 
     newSensor.id = newId;
     newSensor.name = req.body.name;
-    newSensor.measurements = [];
+    newSensor.measurements = [{
+                            "date": req.body.date,
+                            "temperature": req.body.temperature,
+                            "humidity": req.body.humidity
+    }];
     sensoresService.saveSensor(newSensor);
 
     res.redirect('/admin/sensores');
