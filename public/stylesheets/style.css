@@ -83,3 +83,15 @@ label{
 .center-2{
     text-align: center;
 }
+
+.sensor-name{
+    color: white;
+}
+
+.form-signin{
+    color: yellow;
+}
+
+label{
+    color: yellow;
+}

@@ -15,9 +15,9 @@
   <div class="container">
       <% sensor.forEach((sensor) => { %>
       <div class="sensor">
-        <h2 class="sensor-name" >
+        <h3 class="sensor-name">
           <%= sensor.id %> - <%= sensor.name %>
-        </h2>
+        </h3>
         <br>
         <% if (sensor.measurements.length > 0) { %>
         <table class="table">
