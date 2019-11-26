@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Posts</title>
+  <title>Administração de Sensores</title>
   <%- include('import'); -%>
 </head>
 
@@ -11,15 +11,11 @@
   <div class="center">
     <h1>Administração de Sensores</h1>
   </div>
+
   <div class="container">
-    <div class="row">
-    </div>
-    <div class="row mb-2">
-    </div>
-    <div class="row">
       <% sensor.forEach((sensor) => { %>
       <div class="sensor">
-        <h2 class="sensor-name">
+        <h2 class="sensor-name" >
           <%= sensor.id %> - <%= sensor.name %>
         </h2>
         <br>

@@ -11,10 +11,12 @@
   <div class="container">
     <div class="row">
       <div class="post-detail">
-        <h1><%= sensor.nome %></h1>
-        <p><%= sensor.data %></p>
-        <p><%= sensor.valor %> </p>
-        <p><%= sensor.tipo %></p>
+        <h1><%= sensor.name %></h1>
+        <% sensor.measurements.forEach((measurement) => { %>
+        <p><%= measurement.date %></p>
+        <p><%= measurement.temperature %> </p>
+        <p><%= measurement.humidity %></p>
+        <% }); %>
       </div>
     </div>
   </div>

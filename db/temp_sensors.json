@@ -9,27 +9,5 @@
                 "humidity": "78.70"
             }
         ]
-    },
-    {
-        "id": 6,
-        "name": "testre 2",
-        "measurements": [
-            {
-                "date": "01/01/2019",
-                "temperature": "1",
-                "humidity": "1"
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "name": "teste teste",
-        "measurements": [
-            {
-                "date": "01/01/2019",
-                "temperature": "1",
-                "humidity": "1"
-            }
-        ]
     }
 ]

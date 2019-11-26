@@ -3,8 +3,13 @@
     <div class="card-body">
       <h4 class="card-title"><%= acionamento.name %></h4>
       <form action="create" method="POST">
-      <button value="<%= acionamento.status %>" name="status" type="button; submit" class="btn btn-success">Ligar</button>
-      <input type="hidden" name="id" value="<%= acionamento.id %>">
+        <% if (acionamento.status == 0) { %>
+          <button value="<%= acionamento.status %>" name="status" type="button; submit" class="btn btn-success">Ligar</button>
+          <input type="hidden" name="id" value="<%= acionamento.id %>">
+        <% } else { %>
+          <button value="<%= acionamento.status %>" name="status" type="button; submit" class="btn btn-danger">Desligar </button>
+          <input type="hidden" name="id" value="<%= acionamento.id %>">
+        <% } %>
       </form>
     </div>
   </div>
